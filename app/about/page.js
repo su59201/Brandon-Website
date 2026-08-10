@@ -44,7 +44,7 @@ export default function About() {
 
           <section className="operating-story" aria-label="Continuous operating path">
             <div className="operating-spine" aria-hidden="true"></div>
-            {path.map(([stage, line1, line2, line3, principle, side], index) => (
+            {path.slice(0, 2).map(([stage, line1, line2, line3, principle, side], index) => (
               <div className={`operating-stop operating-${side}`} key={stage}>
                 <div className="operating-node"><i></i><span>0{index + 1}</span></div>
                 <article className="operating-stage"><h2>{stage}</h2><p>{line1}</p><p>{line2}</p><p>{line3}</p></article>
@@ -59,6 +59,14 @@ export default function About() {
               <div className="interlude-range">CUSTOMERS · SUPPLIERS · CASH FLOW · LOGISTICS · OPERATIONS · NEGOTIATION · RISK · GROWTH</div>
               <blockquote>SUSTAINABLE GROWTH REQUIRES<br />STRONG SYSTEMS,<br />DISCIPLINED EXECUTION,<br />AND GREAT TEAMS.</blockquote>
             </div>
+
+            {path.slice(2).map(([stage, line1, line2, line3, principle, side], offset) => (
+              <div className={`operating-stop operating-${side}`} key={stage}>
+                <div className="operating-node"><i></i><span>0{offset + 3}</span></div>
+                <article className="operating-stage"><h2>{stage}</h2><p>{line1}</p><p>{line2}</p><p>{line3}</p></article>
+                <p className="operating-principle">{principle}</p>
+              </div>
+            ))}
           </section>
 
           <section className="about-story-next">
