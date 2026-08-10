@@ -2,9 +2,7 @@ export default function Home() {
   return (
     <main className="home">
       <header className="header">
-        <a className="logo" href="#">
-          BRANDON BAEK
-        </a>
+        <div className="logo">BRANDON BAEK</div>
 
         <nav className="nav">
           <a href="#about">About</a>
@@ -15,22 +13,50 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">
-            U.S. · KOREA · CHINA
-          </p>
 
-          <h1>
-            <span>Cross-border supply chains.</span>
-            <span>Built for business growth.</span>
-          </h1>
+          <div className="markets">
+            <span>U.S.</span>
+            <span className="dot">•</span>
+            <span>KOREA</span>
+            <span className="dot">•</span>
+            <span>CHINA</span>
+          </div>
 
-          <p className="expertise">
-            Strategic Sourcing
-            <span>·</span>
-            Supplier Development
-            <span>·</span>
-            Business Development
-          </p>
+          <div className="market-line"></div>
+
+          <h1>Cross-border supply chains.</h1>
+
+          <div className="hero-subtitle">
+            Built for business growth.
+          </div>
+
+          <div className="expertise">
+
+            <div className="expertise-item">
+              <div className="expertise-icon">◎</div>
+              <div>
+                <strong>STRATEGIC</strong>
+                <strong>SOURCING</strong>
+              </div>
+            </div>
+
+            <div className="expertise-item">
+              <div className="expertise-icon">♙</div>
+              <div>
+                <strong>SUPPLIER</strong>
+                <strong>DEVELOPMENT</strong>
+              </div>
+            </div>
+
+            <div className="expertise-item">
+              <div className="expertise-icon">↗</div>
+              <div>
+                <strong>BUSINESS</strong>
+                <strong>DEVELOPMENT</strong>
+              </div>
+            </div>
+
+          </div>
 
           <p className="intro">
             15+ years of hands-on experience building businesses,
@@ -38,28 +64,26 @@ export default function Home() {
             challenges across the U.S. and Asia.
           </p>
 
-          <div className="actions">
+          <div className="hero-actions">
             <a className="primary-link" href="#work">
-              Explore Experience
-              <span>→</span>
+              EXPLORE EXPERIENCE <span>→</span>
             </a>
 
             <a className="secondary-link" href="#about">
-              About Brandon
+              ABOUT BRANDON
             </a>
           </div>
         </div>
 
         <div className="portrait-wrap">
-          <img
-            className="portrait"
-            src="/brandon-baek.jpg"
-            alt="Brandon Baek"
-          />
+          <div className="portrait">
+            <img src="/brandon-baek.jpg" alt="Brandon Baek" />
+          </div>
 
           <div className="portrait-caption">
-            <span>Global Business</span>
-            <span>Dallas, Texas</span>
+            <span>GLOBAL BUSINESS</span>
+            <span className="caption-dot">•</span>
+            <span>DALLAS, TEXAS</span>
           </div>
         </div>
       </section>
