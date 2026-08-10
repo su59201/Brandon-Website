@@ -66,7 +66,6 @@ export default function About() {
               </div>
               <div>
                 <p>I learned how the functions connect<br />by building and operating a business.</p>
-                <div className="value-chain-range">CUSTOMERS · SUPPLIERS · CASH FLOW · LOGISTICS · OPERATIONS · NEGOTIATION · RISK · GROWTH</div>
                 <blockquote>SUSTAINABLE GROWTH REQUIRES<br />STRONG SYSTEMS, DISCIPLINED EXECUTION,<br />AND GREAT TEAMS.</blockquote>
               </div>
             </div>
