@@ -392,80 +392,70 @@ a {
 
 
 
+
 /* =========================
-   ABOUT PAGE — EXECUTIVE REDESIGN
+   ABOUT PAGE — FINAL GRID LAYOUT
 ========================= */
-.about-redesign{min-height:100vh;background:#0b0f14;color:#f4f6f8}
-.about-shell{width:100%;max-width:1280px;margin:0 auto;padding:0 64px}
-.about-site-header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #20262e}
-.about-site-brand{display:flex;flex-direction:column;gap:5px}
-.about-site-brand strong{font-size:15px;letter-spacing:.08em}
-.about-site-brand span{color:#687381;font-size:9px;font-weight:500;letter-spacing:.13em}
-.about-site-nav{display:flex;align-items:center;gap:36px;height:100%}
-.about-site-nav a{position:relative;color:#aab2bd;font-size:13px;transition:color .2s ease}
-.about-site-nav a:hover,.about-site-nav .is-active{color:#fff}
-.about-site-nav .is-active::after{content:"";position:absolute;left:0;right:0;bottom:-33px;height:2px;background:#438dff}
-.about-kicker{margin:0;color:#5fa0ff;font-size:11px;font-weight:800;letter-spacing:.22em}
-.about-kicker span{color:#526171}
-.about-executive-hero{min-height:680px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(350px,.72fr);align-items:center;gap:88px;padding:104px 0 112px;border-bottom:1px solid #20262e}
-.about-hero-message h1{margin:30px 0 0;font-size:clamp(54px,5.4vw,74px);line-height:1.02;letter-spacing:-.052em}
-.about-hero-message h1 em,.about-section-heading h2 em,.about-experience-title h2 em{color:#7f8996;font-style:normal;font-weight:400}
-.about-hero-intro{max-width:690px;margin:38px 0 0;color:#9fa9b6;font-size:17px;line-height:1.8}
-.about-stat-composition{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #303842;border-left:1px solid #303842}
-.about-stat{min-height:175px;display:flex;flex-direction:column;justify-content:space-between;padding:26px 28px;border-right:1px solid #303842;border-bottom:1px solid #303842;transition:border-color .2s ease,background .2s ease}
-.about-stat:hover{background:#0e141c;border-color:#3d5774}
-.about-stat-primary{grid-column:1/-1;min-height:210px;position:relative}
-.about-stat-primary::before{content:"";position:absolute;left:28px;top:-1px;width:54px;height:2px;background:#438dff}
-.about-stat strong{font-size:58px;line-height:.9;letter-spacing:-.06em}
-.about-stat-primary strong{font-size:86px}
-.about-stat span{color:#788594;font-size:10px;font-weight:800;line-height:1.5;letter-spacing:.13em}
-.about-narrative{display:grid;grid-template-columns:minmax(220px,.52fr) minmax(0,1.48fr);gap:96px;padding:108px 0 126px;border-bottom:1px solid #20262e}
-.about-narrative-rule span{display:block;width:72px;height:2px;margin-bottom:20px;background:#438dff}
-.about-narrative-rule p{margin:0;color:#6f7b88;font-size:9px;font-weight:800;letter-spacing:.18em}
-.about-narrative-copy{max-width:790px}
-.about-narrative-copy p{margin:0 0 26px;color:#929daa;font-size:16px;line-height:1.85}
-.about-narrative-copy p:first-child{color:#e3e8ed;font-size:22px;line-height:1.62}
-.about-major-section{padding:132px 0 144px;border-bottom:1px solid #20262e}
-.about-section-heading{margin-bottom:70px}
-.about-section-heading h2,.about-experience-title h2{margin:28px 0 0;font-size:clamp(42px,4.4vw,60px);line-height:1.05;letter-spacing:-.045em}
-.about-section-heading-row{display:grid;grid-template-columns:minmax(260px,.65fr) minmax(0,1.35fr);align-items:end;gap:72px}
-.about-section-heading-row h2{margin:0}
-.about-market-panels{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #303842;border-left:1px solid #303842}
-.about-market-panels article{position:relative;min-height:310px;padding:34px 34px 38px;border-right:1px solid #303842;border-bottom:1px solid #303842;transition:background .25s ease,border-color .25s ease}
-.about-market-panels article::before,.about-principle-grid article::before{content:"";position:absolute;left:0;top:-1px;width:0;height:2px;background:#438dff;transition:width .25s ease}
-.about-market-panels article:hover,.about-principle-grid article:hover{background:#0e141c;border-color:#3b4b5e}
-.about-market-panels article:hover::before,.about-principle-grid article:hover::before{width:76px}
-.about-panel-number{color:#438dff;font-size:10px;font-weight:800;letter-spacing:.12em}
-.about-market-panels h3{margin:62px 0 32px;font-size:28px;letter-spacing:.04em}
-.about-market-panels ul{margin:0;padding:0;list-style:none}
-.about-market-panels li{padding:9px 0;color:#909ba8;font-size:13px;border-bottom:1px solid #1d252e}
-.about-market-panels li:last-child{border-bottom:0}
-.about-global-section blockquote{margin:72px 0 0;padding-left:32px;border-left:2px solid #438dff;color:#87929f;font-size:clamp(28px,3vw,40px);line-height:1.35;letter-spacing:-.03em}
-.about-global-section blockquote strong{color:#f1f4f7;font-weight:600}
-.about-capability-panels{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #303842;border-bottom:1px solid #303842}
-.about-capability-panels article{min-height:290px;padding:40px 38px 42px;border-right:1px solid #303842}
-.about-capability-panels article:last-child{border-right:0}
-.about-capability-icon{display:flex;align-items:center;height:46px;color:#438dff;font-size:38px;line-height:1}
-.about-capability-panels h3{margin:54px 0 22px;font-size:15px;line-height:1.4;letter-spacing:.045em}
-.about-capability-panels p{margin:0;color:#929daa;font-size:14px;line-height:1.75}
-.about-experience-layout{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:112px;align-items:start}
-.about-experience-title{position:sticky;top:62px}
-.about-experience-story{padding-top:38px}
-.about-experience-story>p{margin:0 0 28px;color:#9ca6b2;font-size:16px;line-height:1.82}
-.about-experience-story>p:first-child{color:#e3e8ed;font-size:21px}
-.about-experience-story .about-experience-highlight{position:relative;margin-top:48px;padding:30px 0 30px 34px;color:#f1f4f7;font-size:22px;line-height:1.55;border-left:2px solid #438dff}
-.about-principle-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #303842;border-left:1px solid #303842}
-.about-principle-grid article{position:relative;min-height:270px;padding:34px 36px 42px;border-right:1px solid #303842;border-bottom:1px solid #303842;transition:background .25s ease,border-color .25s ease}
-.about-principle-grid h3{margin:52px 0 24px;font-size:23px;letter-spacing:.045em}
-.about-principle-grid p{max-width:440px;margin:0;color:#929daa;font-size:15px;line-height:1.75}
-.about-next-chapter{padding:146px 0 154px}
-.about-next-chapter h2{max-width:1100px;margin:34px 0 0;font-size:clamp(40px,4.7vw,63px);line-height:1.13;letter-spacing:-.045em}
-.about-cta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:72px}
-.about-cta-grid a{position:relative;min-height:132px;display:flex;flex-direction:column;justify-content:space-between;padding:24px 58px 26px 28px;border:1px solid #303842;transition:background .2s ease,border-color .2s ease}
-.about-cta-grid a:hover{background:#0e151e;border-color:#438dff}
-.about-cta-grid a>span{color:#6e7a88;font-size:9px;font-weight:800;letter-spacing:.15em}
-.about-cta-grid a strong{font-size:13px;letter-spacing:.06em}
-.about-cta-grid a i{position:absolute;right:28px;bottom:22px;color:#5fa0ff;font-size:25px;font-style:normal}
-@media(max-width:980px){.about-shell{padding:0 42px}.about-executive-hero{grid-template-columns:1fr;gap:64px}.about-stat-composition{max-width:620px}.about-narrative{grid-template-columns:1fr;gap:50px}.about-section-heading-row{grid-template-columns:1fr;gap:34px}.about-experience-layout{grid-template-columns:1fr;gap:56px}.about-experience-title{position:static}.about-experience-story{max-width:760px;padding-top:0}}
-@media(max-width:760px){.about-shell{padding:0 24px}.about-site-header{height:auto;min-height:82px;align-items:flex-start;padding:22px 0}.about-site-brand span{display:none}.about-site-nav{gap:18px}.about-site-nav a{font-size:12px}.about-site-nav .is-active::after{bottom:-29px}.about-executive-hero{min-height:0;padding:74px 0 80px}.about-hero-message h1{font-size:43px}.about-hero-intro{font-size:15px}.about-stat-primary strong{font-size:70px}.about-major-section{padding:86px 0 94px}.about-narrative{padding:78px 0 88px}.about-market-panels,.about-capability-panels{grid-template-columns:1fr}.about-market-panels article{min-height:255px}.about-capability-panels{border-left:1px solid #303842}.about-capability-panels article{min-height:245px;border-right:1px solid #303842;border-bottom:1px solid #303842}.about-capability-panels article:last-child{border-right:1px solid #303842}.about-principle-grid{grid-template-columns:1fr}.about-principle-grid article{min-height:235px}.about-next-chapter{padding:94px 0 102px}.about-next-chapter h2 br{display:none}.about-cta-grid{grid-template-columns:1fr;margin-top:52px}}
-@media(max-width:520px){.about-site-nav a:nth-last-child(-n+2){display:none}.about-stat-composition{grid-template-columns:1fr}.about-stat-primary{grid-column:auto}.about-stat{min-height:155px}.about-hero-message h1{font-size:38px}.about-section-heading h2,.about-experience-title h2{font-size:39px}}
+.about-final{min-height:100vh;background:#0b0f14;color:#f4f6f8}
+.about-final-container{width:100%;max-width:1240px;margin:0 auto;padding-left:48px;padding-right:48px}
+.about-final-header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08)}
+.about-final-brand{display:flex;flex-direction:column;gap:5px}
+.about-final-brand strong{font-size:15px;letter-spacing:.08em}
+.about-final-brand span{color:#687381;font-size:9px;font-weight:500;letter-spacing:.13em}
+.about-final-nav{height:100%;display:flex;align-items:center;gap:36px}
+.about-final-nav a{position:relative;color:#aab2bd;font-size:13px;transition:color .2s ease}
+.about-final-nav a:hover,.about-final-nav .active{color:#fff}
+.about-final-nav .active::after{content:"";position:absolute;left:0;right:0;bottom:-33px;height:2px;background:#438dff}
+.about-final-section{padding-top:120px;padding-bottom:120px;border-top:1px solid rgba(255,255,255,.08)}
+.about-final-header+.about-final-section{border-top:0}
+.about-final-label{margin:0;color:#5fa0ff;font-size:11px;font-weight:800;letter-spacing:.22em}
+.about-final-label span{color:#566474}
+.about-final-hero{min-height:calc(80vh - 82px);display:grid;grid-template-columns:1.35fr .65fr;gap:100px;align-items:center}
+.about-final-hero h1{margin:28px 0 0;font-size:clamp(54px,5vw,72px);line-height:1.03;letter-spacing:-.052em}
+.about-final-intro{max-width:660px;margin:34px 0 0;color:#a2acb8;font-size:17px;line-height:1.75}
+.about-final-body-copy{max-width:700px;margin-top:34px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px 28px}
+.about-final-body-copy p{margin:0;color:#7f8a97;font-size:13px;line-height:1.7}
+.about-final-body-copy p:last-child{grid-column:1/-1}
+.about-final-role-line{margin:36px 0 0;color:#6f7b88;font-size:9px;font-weight:800;letter-spacing:.2em}
+.about-final-stats{border-top:1px solid rgba(255,255,255,.13)}
+.about-final-stats>div{min-height:132px;display:grid;grid-template-columns:110px 1fr;align-items:center;gap:22px;border-bottom:1px solid rgba(255,255,255,.13)}
+.about-final-stats strong{color:#438dff;font-size:68px;line-height:1;letter-spacing:-.05em}
+.about-final-stats span{color:#8d99a7;font-size:10px;font-weight:800;line-height:1.5;letter-spacing:.13em}
+.about-final-heading{margin-bottom:64px}
+.about-final-heading h2,.about-final-experience h2{margin:26px 0 0;font-size:48px;line-height:1.08;letter-spacing:-.04em}
+.about-final-heading h2 em,.about-final-experience h2 em{color:#7f8996;font-style:normal;font-weight:400}
+.about-final-markets{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13)}
+.about-final-markets article{min-height:300px;padding:38px 36px;border-right:1px solid rgba(255,255,255,.13);transition:background .2s ease}
+.about-final-markets article:first-child{border-left:1px solid rgba(255,255,255,.13)}
+.about-final-markets article:hover{background:rgba(50,130,255,.04)}
+.about-final-markets article>span,.about-final-principles article>span{color:#438dff;font-size:10px;font-weight:800;letter-spacing:.13em}
+.about-final-markets h3{margin:54px 0 40px;font-size:34px;letter-spacing:.04em}
+.about-final-market-lines p{margin:0 0 12px;color:#929daa;font-size:14px;line-height:1.45}
+.about-final-global blockquote{max-width:800px;margin:70px 0 0;padding-left:30px;border-left:2px solid #438dff;color:#818d9a;font-size:36px;line-height:1.35;letter-spacing:-.03em}
+.about-final-global blockquote strong{color:#f4f6f8;font-weight:700}
+.about-final-capabilities{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13)}
+.about-final-capabilities article{min-height:320px;padding:42px 38px;border-right:1px solid rgba(255,255,255,.13)}
+.about-final-capabilities article:first-child{border-left:1px solid rgba(255,255,255,.13)}
+.about-final-icon{display:block;color:#438dff;font-size:30px;line-height:1}
+.about-final-capabilities h3{margin:50px 0 24px;font-size:24px;line-height:1.15;letter-spacing:.02em}
+.about-final-capabilities p{max-width:290px;margin:0;color:#929daa;font-size:14px;line-height:1.7}
+.about-final-experience{display:grid;grid-template-columns:.85fr 1.15fr;gap:120px;align-items:start}
+.about-final-story{max-width:620px}
+.about-final-story>p{margin:0 0 28px;color:#9ca6b2;font-size:18px;line-height:1.8}
+.about-final-story>p:first-child{color:#e1e6eb}
+.about-final-quote{margin-top:48px;padding:30px 0 30px 32px;border-left:2px solid #438dff;color:#f1f4f7;font-size:22px;font-weight:700;line-height:1.45;letter-spacing:.025em}
+.about-final-principles{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(255,255,255,.13);border-left:1px solid rgba(255,255,255,.13)}
+.about-final-principles article{min-height:220px;padding:48px 40px;border-right:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13);transition:background .2s ease}
+.about-final-principles article:hover{background:rgba(50,130,255,.04)}
+.about-final-principles h3{margin:38px 0 22px;font-size:28px;letter-spacing:.025em}
+.about-final-principles p{max-width:420px;margin:0;color:#929daa;font-size:15px;line-height:1.7}
+.about-final-cta{padding-top:150px;padding-bottom:150px;border-top:1px solid rgba(255,255,255,.08)}
+.about-final-cta h2{max-width:950px;margin:32px 0 0;font-size:52px;line-height:1.14;letter-spacing:-.045em}
+.about-final-links{display:flex;gap:60px;margin-top:68px}
+.about-final-links a{width:320px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between;padding:22px 26px;border:1px solid rgba(255,255,255,.15);transition:background .2s ease,border-color .2s ease}
+.about-final-links a:hover{background:rgba(50,130,255,.04);border-color:#438dff}
+.about-final-links span{color:#71808f;font-size:9px;font-weight:800;letter-spacing:.14em}
+.about-final-links strong{font-size:13px;letter-spacing:.045em}
+@media(max-width:1000px) and (min-width:768px){.about-final-hero{gap:60px}.about-final-experience{gap:70px}.about-final-capabilities article{padding-left:28px;padding-right:28px}.about-final-markets article{padding-left:28px;padding-right:28px}}
+@media(max-width:767px){.about-final-container{padding-left:24px;padding-right:24px}.about-final-header{height:auto;min-height:82px;padding:20px 0}.about-final-brand span{display:none}.about-final-nav{gap:18px}.about-final-nav a{font-size:12px}.about-final-nav .active::after{bottom:-29px}.about-final-section{padding-top:82px;padding-bottom:82px}.about-final-hero{min-height:0;grid-template-columns:1fr;gap:64px}.about-final-hero h1{font-size:42px}.about-final-body-copy{grid-template-columns:1fr}.about-final-body-copy p:last-child{grid-column:auto}.about-final-stats>div{grid-template-columns:100px 1fr}.about-final-stats strong{font-size:62px}.about-final-heading h2,.about-final-experience h2{font-size:40px}.about-final-markets,.about-final-capabilities,.about-final-experience,.about-final-principles{grid-template-columns:1fr}.about-final-markets article,.about-final-capabilities article{border-left:1px solid rgba(255,255,255,.13);min-height:260px}.about-final-global blockquote{font-size:29px}.about-final-experience{gap:56px}.about-final-cta{padding-top:100px;padding-bottom:100px}.about-final-cta h2{font-size:39px}.about-final-cta h2 br{display:none}.about-final-links{flex-direction:column;gap:24px}.about-final-links a{width:100%}}
+@media(max-width:520px){.about-final-nav a:nth-last-child(-n+2){display:none}.about-final-hero h1{font-size:37px}}
