@@ -1,8 +1,14 @@
 export default function Home() {
   return (
     <main className="home">
+
       <header className="header">
-        <div className="logo">BRANDON BAEK</div>
+        <div className="brand">
+          <div className="logo">BRANDON BAEK</div>
+          <div className="brand-subtitle">
+            GLOBAL BUSINESS · SUPPLY CHAIN
+          </div>
+        </div>
 
         <nav className="nav">
           <a href="#about">About</a>
@@ -12,47 +18,51 @@ export default function Home() {
       </header>
 
       <section className="hero">
+
         <div className="hero-copy">
 
           <div className="markets">
             <span>U.S.</span>
-            <span className="dot">•</span>
+            <span>•</span>
             <span>KOREA</span>
-            <span className="dot">•</span>
+            <span>•</span>
             <span>CHINA</span>
           </div>
 
-          <div className="market-line"></div>
+          <div className="market-line">
+            <span></span>
+          </div>
 
           <h1>Cross-border supply chains.</h1>
 
-          <div className="hero-subtitle">
-            Built for business growth.
-          </div>
+          <h2>Built for business growth.</h2>
 
           <div className="expertise">
 
             <div className="expertise-item">
               <div className="expertise-icon">◎</div>
               <div>
-                <strong>STRATEGIC</strong>
-                <strong>SOURCING</strong>
+                STRATEGIC
+                <br />
+                SOURCING
               </div>
             </div>
 
             <div className="expertise-item">
               <div className="expertise-icon">♙</div>
               <div>
-                <strong>SUPPLIER</strong>
-                <strong>DEVELOPMENT</strong>
+                SUPPLIER
+                <br />
+                DEVELOPMENT
               </div>
             </div>
 
             <div className="expertise-item">
               <div className="expertise-icon">↗</div>
               <div>
-                <strong>BUSINESS</strong>
-                <strong>DEVELOPMENT</strong>
+                BUSINESS
+                <br />
+                DEVELOPMENT
               </div>
             </div>
 
@@ -64,8 +74,8 @@ export default function Home() {
             challenges across the U.S. and Asia.
           </p>
 
-          <div className="hero-actions">
-            <a className="primary-link" href="#work">
+          <div className="actions">
+            <a className="cta" href="#work">
               EXPLORE EXPERIENCE <span>→</span>
             </a>
 
@@ -73,20 +83,21 @@ export default function Home() {
               ABOUT BRANDON
             </a>
           </div>
+
         </div>
 
-        <div className="portrait-wrap">
-          <div className="portrait">
-            <img src="/brandon-baek.jpg" alt="Brandon Baek" />
-          </div>
+        <div className="portrait">
+          <img src="/brandon-baek.jpg" alt="Brandon Baek" />
 
-          <div className="portrait-caption">
+          <div className="portrait-meta">
             <span>GLOBAL BUSINESS</span>
-            <span className="caption-dot">•</span>
+            <span className="meta-dot">•</span>
             <span>DALLAS, TEXAS</span>
           </div>
         </div>
+
       </section>
+
     </main>
   );
 }
