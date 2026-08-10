@@ -2,7 +2,9 @@ export default function Home() {
   return (
     <main className="home">
       <header className="header">
-        <div className="logo">BRANDON BAEK</div>
+        <a className="logo" href="#">
+          BRANDON BAEK
+        </a>
 
         <nav className="nav">
           <a href="#about">About</a>
@@ -13,31 +15,52 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-copy">
-          <p className="label">GLOBAL BUSINESS · U.S. & ASIA</p>
+          <p className="eyebrow">
+            U.S. · KOREA · CHINA
+          </p>
 
           <h1>
-            Building supply chains.
-            <br />
-            Growing businesses.
+            <span>Cross-border supply chains.</span>
+            <span>Built for business growth.</span>
           </h1>
 
-          <p className="role">
-            Strategic Sourcing · Supply Chain · Business Development
+          <p className="expertise">
+            Strategic Sourcing
+            <span>·</span>
+            Supplier Development
+            <span>·</span>
+            Business Development
           </p>
 
           <p className="intro">
-            15+ years of cross-border experience across the U.S.,
-            Korea, and China — building businesses, developing suppliers,
-            and turning complex problems into practical solutions.
+            15+ years of hands-on experience building businesses,
+            developing suppliers, and solving complex cross-border
+            challenges across the U.S. and Asia.
           </p>
 
-          <a className="cta" href="#work">
-            Explore My Work →
-          </a>
+          <div className="actions">
+            <a className="primary-link" href="#work">
+              Explore Experience
+              <span>→</span>
+            </a>
+
+            <a className="secondary-link" href="#about">
+              About Brandon
+            </a>
+          </div>
         </div>
 
-        <div className="portrait">
-          <img src="/brandon-baek.jpg" alt="Brandon Baek" />
+        <div className="portrait-wrap">
+          <img
+            className="portrait"
+            src="/brandon-baek.jpg"
+            alt="Brandon Baek"
+          />
+
+          <div className="portrait-caption">
+            <span>Global Business</span>
+            <span>Dallas, Texas</span>
+          </div>
         </div>
       </section>
     </main>
