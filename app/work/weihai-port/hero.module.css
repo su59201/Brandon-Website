@@ -1,0 +1,115 @@
+.support {
+  max-width: 720px;
+  margin: 0;
+  color: #c4ccd5;
+  font-size: clamp(18px, 1.55vw, 21px);
+  line-height: 1.65;
+}
+
+.bridge {
+  max-width: 750px;
+  margin: 4px 0 0 auto;
+  padding: 22px 0 3px;
+  border-top: 1px solid rgba(67, 141, 255, 0.5);
+}
+
+.bridge p {
+  margin: 0 0 8px;
+  color: #aeb8c3;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.bridge p:first-child {
+  color: #eef2f6;
+  font-weight: 650;
+}
+
+.bridge p:last-child {
+  margin-top: 14px;
+  color: #cbd2d9;
+  font-size: 17px;
+}
+
+.journey {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.journey > div {
+  position: relative;
+  min-height: 64px;
+  padding: 14px 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.journey > div:last-child {
+  border-right: 0;
+}
+
+.journey span {
+  color: #8f9ba8;
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: 0.1em;
+}
+
+.journey > div:first-child span,
+.journey > div:nth-child(2) span,
+.journey > div:last-child span {
+  color: #68a7ff;
+}
+
+.journey b {
+  position: absolute;
+  right: -5px;
+  bottom: 4px;
+  z-index: 1;
+  color: #438dff;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .bridge {
+    margin-left: 0;
+  }
+
+  .journey {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .journey > div:nth-child(4) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .support {
+    font-size: 17px;
+  }
+
+  .bridge p,
+  .bridge p:last-child {
+    font-size: 15px;
+  }
+
+  .journey {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .journey > div {
+    min-height: 58px;
+  }
+
+  .journey > div:nth-child(2n) {
+    border-right: 0;
+  }
+}
