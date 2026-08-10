@@ -1,3 +1,4 @@
+import "./globals.css";
 export const metadata = {
   title: "Brandon Baek",
   description: "Global Business Builder & Strategic Problem Solver",
