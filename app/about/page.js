@@ -1,9 +1,9 @@
 export default function About() {
-  const path = [
-    ["SOURCE", "Strategic Sourcing", "Supplier Identification", "Negotiation", "HANDS-ON", "left"],
-    ["BUILD", "Supplier Development", "Relationships", "Networks", "PERSISTENT", "right"],
-    ["OPERATE", "Customers", "Logistics", "Risk · Execution", "CROSS-CULTURAL", "left"],
-    ["GROW", "Business Development", "Markets", "Opportunity", "ALWAYS LEARNING", "right"],
+  const valueStages = [
+    ["01", "SOURCE", "STRATEGIC SOURCING", "Supplier Identification", "Qualification", "Negotiation", "HANDS-ON"],
+    ["02", "BUILD", "SUPPLIER DEVELOPMENT", "Relationships", "Supplier Networks", "Problem Solving", "PERSISTENT"],
+    ["03", "OPERATE", "EXECUTION", "Customers", "Logistics", "Risk Management", "CROSS-CULTURAL"],
+    ["04", "GROW", "BUSINESS DEVELOPMENT", "Markets", "Opportunity", "Growth", "ALWAYS LEARNING"],
   ];
 
   return (
@@ -42,31 +42,34 @@ export default function About() {
             <blockquote>I don’t just understand three markets.<br /><strong>I know how to move between them.</strong></blockquote>
           </section>
 
-          <section className="operating-story" aria-label="Continuous operating path">
-            <div className="operating-spine" aria-hidden="true"></div>
-            {path.slice(0, 2).map(([stage, line1, line2, line3, principle, side], index) => (
-              <div className={`operating-stop operating-${side}`} key={stage}>
-                <div className="operating-node"><i></i><span>0{index + 1}</span></div>
-                <article className="operating-stage"><h2>{stage}</h2><p>{line1}</p><p>{line2}</p><p>{line3}</p></article>
-                <p className="operating-principle">{principle}</p>
-              </div>
-            ))}
-
-            <div className="entrepreneur-interlude">
-              <div className="interlude-node"><i></i></div>
-              <h2>I DIDN’T BUILD MY CAREER<br />INSIDE ONE FUNCTION.</h2>
-              <p>I learned how the functions connect<br />by building and operating a business.</p>
-              <div className="interlude-range">CUSTOMERS · SUPPLIERS · CASH FLOW · LOGISTICS · OPERATIONS · NEGOTIATION · RISK · GROWTH</div>
-              <blockquote>SUSTAINABLE GROWTH REQUIRES<br />STRONG SYSTEMS,<br />DISCIPLINED EXECUTION,<br />AND GREAT TEAMS.</blockquote>
+          <section className="value-chain-section" aria-label="How I create value">
+            <div className="value-chain-heading">
+              <p className="about-story-label">03 <span>/</span> HOW I CREATE VALUE</p>
+              <h2>FROM SOURCE<br /><em>TO GROWTH.</em></h2>
             </div>
 
-            {path.slice(2).map(([stage, line1, line2, line3, principle, side], offset) => (
-              <div className={`operating-stop operating-${side}`} key={stage}>
-                <div className="operating-node"><i></i><span>0{offset + 3}</span></div>
-                <article className="operating-stage"><h2>{stage}</h2><p>{line1}</p><p>{line2}</p><p>{line3}</p></article>
-                <p className="operating-principle">{principle}</p>
+            <div className="value-chain-flow">
+              {valueStages.map(([number, stage, capability, item1, item2, item3, principle]) => (
+                <article key={stage}>
+                  <div className="value-chain-node"><i></i><span>{number}</span></div>
+                  <h3>{stage}</h3>
+                  <h4>{capability}</h4>
+                  <p>{item1}</p><p>{item2}</p><p>{item3}</p>
+                  <small>{principle}</small>
+                </article>
+              ))}
+            </div>
+
+            <div className="value-chain-editorial">
+              <div>
+                <h3>I DIDN’T BUILD MY CAREER<br />INSIDE ONE FUNCTION.</h3>
               </div>
-            ))}
+              <div>
+                <p>I learned how the functions connect<br />by building and operating a business.</p>
+                <div className="value-chain-range">CUSTOMERS · SUPPLIERS · CASH FLOW · LOGISTICS · OPERATIONS · NEGOTIATION · RISK · GROWTH</div>
+                <blockquote>SUSTAINABLE GROWTH REQUIRES<br />STRONG SYSTEMS, DISCIPLINED EXECUTION,<br />AND GREAT TEAMS.</blockquote>
+              </div>
+            </div>
           </section>
 
           <section className="about-story-next">
