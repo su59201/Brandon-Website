@@ -40,30 +40,15 @@ export default function Home() {
               About Brandon →
             </a>
           </div>
-
-          <div className="hero-stats">
-            <div>
-              <strong>15+</strong>
-              <span>Years Experience</span>
-            </div>
-
-            <div>
-              <strong>3</strong>
-              <span>Global Markets</span>
-            </div>
-
-            <div>
-              <strong>3</strong>
-              <span>Languages</span>
-            </div>
-          </div>
         </div>
 
-        <div className="hero-photo">
-          <img
-            src="/brandon-baek.jpg"
-            alt="Brandon Baek"
-          />
+        <div className="hero-image">
+          <div className="hero-image-frame">
+            <img
+              src="/brandon-baek.jpg"
+              alt="Brandon Baek"
+            />
+          </div>
         </div>
       </section>
     </main>
