@@ -11,7 +11,6 @@ body {
   background: #0b0f14;
   color: #f4f6f8;
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -25,10 +24,10 @@ a {
 
 .home {
   width: 100%;
-  max-width: 1280px;
   min-height: 100vh;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 64px;
 }
 
 /* =========================
@@ -40,26 +39,23 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid #20262e;
 }
 
 .logo {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: #f4f6f8;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
 }
 
 .nav {
   display: flex;
-  align-items: center;
-  gap: 32px;
+  gap: 38px;
 }
 
 .nav a {
-  font-size: 13px;
-  font-weight: 400;
-  color: #9ca6b2;
+  font-size: 14px;
+  color: #aab3bf;
   transition: color 0.2s ease;
 }
 
@@ -74,117 +70,196 @@ a {
 .hero {
   min-height: calc(100vh - 86px);
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(330px, 0.75fr);
   align-items: center;
-  column-gap: 86px;
-  padding: 46px 0 72px;
+  gap: 78px;
+  padding: 70px 0 80px;
 }
 
 .hero-copy {
-  width: 100%;
-  max-width: 700px;
-  transform: translateY(-14px);
-}
-
-/* Small geographic label */
-
-.eyebrow {
-  margin: 0 0 25px;
-  color: #7793b3;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-
-/* Main headline */
-
-.hero h1 {
-  margin: 0;
-  max-width: 700px;
-  font-size: clamp(40px, 3.65vw, 56px);
-  line-height: 1.08;
-  letter-spacing: -0.045em;
-  font-weight: 700;
-}
-
-.hero h1 span {
-  display: block;
-}
-
-.hero h1 span:first-child {
-  color: #f4f6f8;
-}
-
-.hero h1 span:last-child {
-  margin-top: 10px;
-  color: #b6bec8;
-  font-weight: 500;
-}
-
-/* Expertise line */
-
-.expertise {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0 11px;
-  margin: 30px 0 0;
-  color: #d7dce2;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.expertise span {
-  color: #58616c;
-}
-
-/* Intro paragraph */
-
-.intro {
-  max-width: 590px;
-  margin: 21px 0 0;
-  color: #8f9aa7;
-  font-size: 14px;
-  line-height: 1.72;
+  min-width: 0;
 }
 
 /* =========================
-   ACTIONS
+   MARKETS
 ========================= */
 
-.actions {
+.markets {
   display: flex;
   align-items: center;
-  gap: 28px;
-  margin-top: 27px;
+  gap: 13px;
+  color: #8ebcff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+.markets .dot {
+  color: #4c6f9e;
+  font-size: 10px;
+}
+
+.market-line {
+  position: relative;
+  width: 270px;
+  height: 1px;
+  margin-top: 17px;
+  margin-bottom: 52px;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 126, 255, 0.15),
+    rgba(72, 145, 255, 0.9),
+    rgba(72, 145, 255, 0)
+  );
+}
+
+.market-line::after {
+  content: "";
+  position: absolute;
+  left: 115px;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #72aaff;
+  box-shadow: 0 0 12px #438eff;
+}
+
+/* =========================
+   HEADLINE
+========================= */
+
+.hero h1 {
+  margin: 0;
+
+  /* Important: keep headline on one line */
+  white-space: nowrap;
+
+  font-size: clamp(42px, 4.15vw, 66px);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+  font-weight: 750;
+  color: #f4f6f8;
+}
+
+.hero-subtitle {
+  margin-top: 22px;
+  font-size: clamp(34px, 3.35vw, 54px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  color: #9da6b3;
+}
+
+/* =========================
+   EXPERTISE
+========================= */
+
+.expertise {
+  display: flex;
+  align-items: stretch;
+  margin-top: 55px;
+  margin-bottom: 44px;
+}
+
+.expertise-item {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 0 30px;
+  min-height: 66px;
+  border-right: 1px solid #39414c;
+}
+
+.expertise-item:first-child {
+  padding-left: 0;
+}
+
+.expertise-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.expertise-icon {
+  min-width: 42px;
+  color: #4d8dff;
+  font-size: 37px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.expertise-item > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.expertise strong {
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 1.15;
+  letter-spacing: 0.025em;
+  font-weight: 800;
+  color: #f3f5f7;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+  max-width: 720px;
+  margin: 0;
+  color: #aab4c0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-top: 43px;
 }
 
 .primary-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(244, 246, 248, 0.85);
-  color: #f4f6f8;
-  font-size: 13px;
-  font-weight: 600;
-  transition:
-    gap 0.2s ease,
-    color 0.2s ease;
+  position: relative;
+  padding-bottom: 9px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.025em;
 }
 
-.primary-link:hover {
-  gap: 20px;
-  color: #ffffff;
+.primary-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #4d8dff;
+}
+
+.primary-link span {
+  display: inline-block;
+  margin-left: 18px;
+  font-size: 22px;
+  transition: transform 0.2s ease;
+}
+
+.primary-link:hover span {
+  transform: translateX(5px);
 }
 
 .secondary-link {
-  color: #8f9aa7;
-  font-size: 13px;
-  font-weight: 400;
-  transition: color 0.2s ease;
+  color: #939daa;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .secondary-link:hover {
@@ -197,175 +272,162 @@ a {
 
 .portrait-wrap {
   width: 100%;
-  max-width: 390px;
+  max-width: 430px;
   justify-self: end;
-  transform: translateY(-10px);
 }
 
 .portrait {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.portrait img {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 535px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 3px;
 }
 
 .portrait-caption {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  color: #697786;
+  margin-top: 13px;
+  color: #6f7c8d;
   font-size: 10px;
-  line-height: 1;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.12em;
+}
+
+.portrait-caption span:last-child {
+  text-align: right;
+}
+
+.caption-dot {
+  color: #4d8dff;
+  font-size: 12px;
 }
 
 /* =========================
-   TABLET
+   RESPONSIVE
 ========================= */
 
-@media (max-width: 1050px) {
+@media (max-width: 1180px) {
   .home {
-    padding: 0 36px;
+    padding: 0 42px;
   }
 
   .hero {
-    grid-template-columns: 1.08fr 0.92fr;
-    column-gap: 50px;
+    gap: 45px;
   }
 
   .hero h1 {
-    font-size: clamp(38px, 4.8vw, 52px);
+    font-size: clamp(38px, 4vw, 52px);
   }
 
-  .portrait-wrap {
-    max-width: 360px;
+  .hero-subtitle {
+    font-size: clamp(30px, 3.3vw, 43px);
   }
 
-  .portrait {
-    height: 470px;
+  .expertise-item {
+    padding: 0 18px;
+  }
+
+  .expertise-icon {
+    font-size: 30px;
+    min-width: 34px;
+  }
+
+  .expertise strong {
+    font-size: 13px;
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .home {
-    padding: 0 24px;
+    padding: 0 28px;
   }
 
   .header {
-    height: 76px;
+    height: 80px;
   }
 
   .nav {
-    gap: 18px;
-  }
-
-  .nav a {
-    font-size: 12px;
+    gap: 20px;
   }
 
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
-    row-gap: 52px;
-    padding: 70px 0 60px;
+    gap: 60px;
+    padding: 65px 0 80px;
   }
 
-  .hero-copy {
-    max-width: 100%;
-    transform: none;
-  }
-
-  .eyebrow {
-    margin-bottom: 22px;
+  .market-line {
+    margin-bottom: 40px;
   }
 
   .hero h1 {
-    max-width: 620px;
-    font-size: clamp(38px, 10vw, 54px);
+    white-space: normal;
+    font-size: clamp(42px, 9vw, 62px);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(32px, 7vw, 48px);
   }
 
   .expertise {
-    margin-top: 27px;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
-  .intro {
-    max-width: 580px;
+  .expertise-item {
+    padding: 0;
+    padding-right: 25px;
+    border-right: none;
   }
 
   .portrait-wrap {
     justify-self: start;
-    width: min(100%, 430px);
-    max-width: 430px;
-    transform: none;
+    max-width: 500px;
   }
 
-  .portrait {
+  .portrait img {
     height: auto;
-    aspect-ratio: 0.78;
   }
 }
 
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 520px) {
-  .home {
-    padding: 0 20px;
-  }
-
-  .header {
-    height: 70px;
-  }
-
-  .logo {
-    font-size: 12px;
-  }
-
+@media (max-width: 600px) {
   .nav {
     gap: 14px;
   }
 
   .nav a {
-    font-size: 11px;
+    font-size: 12px;
   }
 
-  .hero {
-    padding-top: 54px;
-    row-gap: 44px;
+  .markets {
+    font-size: 11px;
+    gap: 9px;
   }
 
   .hero h1 {
-    font-size: clamp(36px, 11vw, 48px);
-    line-height: 1.07;
+    font-size: 42px;
   }
 
-  .hero h1 span:last-child {
-    margin-top: 8px;
+  .hero-subtitle {
+    font-size: 34px;
   }
 
   .expertise {
-    gap: 5px 8px;
-    font-size: 13px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .intro {
-    font-size: 13px;
-  }
-
-  .actions {
-    gap: 20px;
-  }
-
-  .primary-link,
-  .secondary-link {
-    font-size: 12px;
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
   }
 }
