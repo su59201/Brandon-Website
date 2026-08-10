@@ -1,10 +1,24 @@
 export default function Home() {
   return (
     <main>
-      <h1>BRANDON BAEK</h1>
-      <h2>Global Business Builder & Strategic Problem Solver</h2>
+      <p>BRANDON BAEK</p>
+
+      <h1>
+        Global Sourcing.
+        <br />
+        Supply Chain.
+        <br />
+        Business Strategy.
+      </h1>
+
+      <h2>
+        Connecting the U.S. and Asia through sourcing,
+        supplier development, and business execution.
+      </h2>
+
       <p>
-        I build practical solutions for complex business problems.
+        15+ years of cross-border experience across the U.S.,
+        Korea, and China.
       </p>
     </main>
   );
