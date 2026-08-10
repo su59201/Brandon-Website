@@ -16,9 +16,9 @@ export default function Home() {
           <p className="label">GLOBAL BUSINESS · U.S. & ASIA</p>
 
           <h1>
-            Building businesses.
+            Building supply chains.
             <br />
-            Solving problems.
+            Growing businesses.
           </h1>
 
           <p className="role">
