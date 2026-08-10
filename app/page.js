@@ -11,9 +11,9 @@ export default function Home() {
         </div>
 
         <nav className="nav">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
+          <a href="/about">About</a>
+          <a href="/work">Work</a>
+          <a href="/contact">Contact</a>
         </nav>
       </header>
 
@@ -75,11 +75,11 @@ export default function Home() {
           </p>
 
           <div className="actions">
-            <a className="cta" href="#work">
+            <a className="cta" href="/work">
               EXPLORE EXPERIENCE <span>→</span>
             </a>
 
-            <a className="secondary-link" href="#about">
+            <a className="secondary-link" href="/about">
               ABOUT BRANDON
             </a>
           </div>
