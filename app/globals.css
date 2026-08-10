@@ -389,3 +389,39 @@ a {
     flex-wrap: wrap;
   }
 }
+
+
+/* =========================
+   ABOUT PAGE
+========================= */
+.about-page{min-height:100vh;width:100%;max-width:1280px;margin:0 auto;padding:0 42px 72px}
+.about-header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #20262e}
+.about-brand{display:flex;flex-direction:column;gap:5px}
+.about-logo{font-size:15px;font-weight:800;letter-spacing:.08em;color:#f4f6f8}
+.about-brand-subtitle{font-size:9px;font-weight:500;letter-spacing:.13em;color:#687381}
+.about-nav{display:flex;align-items:center;gap:30px}
+.about-nav a{font-size:13px;color:#aab2bd;transition:color .2s ease}
+.about-nav a:hover,.about-nav .about-nav-active{color:#fff}
+.about-nav .about-home-link{display:inline-flex;align-items:center;gap:8px;padding-right:28px;color:#6da9ff;font-weight:700;border-right:1px solid #303842}
+.about-hero{min-height:620px;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.65fr);align-items:center;gap:88px;padding:92px 0 86px;border-bottom:1px solid #20262e}
+.about-eyebrow,.about-section-intro>p,.about-markets>p{margin:0;color:#5fa0ff;font-size:11px;font-weight:800;letter-spacing:.24em}
+.about-hero h1{max-width:800px;margin:25px 0 0;font-size:clamp(48px,5.2vw,72px);line-height:1.02;letter-spacing:-.05em;font-weight:750}
+.about-hero h1 span{display:block;margin-top:10px;color:#77818e;font-weight:400}
+.about-lead{max-width:690px;margin:36px 0 0;color:#a5afbc;font-size:17px;line-height:1.75}
+.about-return{display:inline-flex;align-items:center;gap:14px;margin-top:42px;padding-bottom:8px;border-bottom:1px solid #5d9cff;font-size:12px;font-weight:800;letter-spacing:.08em}
+.about-return span{color:#5fa0ff;font-size:18px}
+.about-markets{align-self:stretch;display:flex;flex-direction:column;justify-content:center;padding-left:44px;border-left:1px solid #28313c}
+.about-market-list{display:flex;align-items:center;gap:12px;margin-top:22px;color:#eef3f8;font-size:13px;font-weight:800;letter-spacing:.13em}
+.about-market-list i{width:4px;height:4px;background:#438dff;border-radius:50%;box-shadow:0 0 10px rgba(67,141,255,.8)}
+.about-years{display:flex;align-items:flex-end;gap:18px;margin-top:68px}
+.about-years strong{color:#f4f6f8;font-size:72px;line-height:.82;letter-spacing:-.06em}
+.about-years span{color:#758292;font-size:10px;font-weight:800;line-height:1.5;letter-spacing:.12em}
+.about-positioning{display:grid;grid-template-columns:minmax(220px,.55fr) minmax(0,1.45fr);gap:72px;padding:86px 0 34px}
+.about-section-intro h2{margin:22px 0 0;color:#f2f5f8;font-size:clamp(28px,3vw,40px);line-height:1.13;letter-spacing:-.035em}
+.about-pillars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #303842;border-left:1px solid #303842}
+.about-pillars article{min-height:225px;padding:28px 30px 32px;border-right:1px solid #303842;border-bottom:1px solid #303842}
+.about-pillars article>span{color:#438dff;font-size:11px;font-weight:800;letter-spacing:.12em}
+.about-pillars h3{margin:36px 0 0;font-size:14px;letter-spacing:.06em}
+.about-pillars p{margin:16px 0 0;color:#919ca9;font-size:13px;line-height:1.7}
+@media(max-width:900px){.about-hero{grid-template-columns:1fr;gap:64px}.about-markets{padding:38px 0 0;border-top:1px solid #28313c;border-left:0}.about-positioning{grid-template-columns:1fr;gap:46px}}
+@media(max-width:700px){.about-page{padding:0 24px 55px}.about-brand-subtitle,.about-nav>a:not(.about-home-link):not(.about-nav-active){display:none}.about-nav{gap:18px}.about-nav .about-home-link{padding-right:18px}.about-hero{min-height:0;padding:64px 0}.about-hero h1{font-size:43px}.about-lead{font-size:15px}.about-years{margin-top:48px}.about-years strong{font-size:64px}.about-positioning{padding-top:64px}.about-pillars{grid-template-columns:1fr}}
