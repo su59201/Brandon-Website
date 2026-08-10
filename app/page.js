@@ -1,54 +1,43 @@
 export default function Home() {
   return (
-    <main className="site-shell">
-      <header className="top-nav">
-        <div className="brand">BRANDON BAEK</div>
+    <main className="home">
+      <header className="header">
+        <div className="logo">BRANDON BAEK</div>
 
-        <nav>
+        <nav className="nav">
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
+          <a href="#work">Work</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section className="hero">
-        <div className="hero-content">
-          <p className="eyebrow">GLOBAL BUSINESS · U.S. & ASIA</p>
+        <div className="hero-copy">
+          <p className="label">GLOBAL BUSINESS · U.S. & ASIA</p>
 
           <h1>
             Building businesses.
             <br />
-            Solving complex problems.
+            Solving problems.
           </h1>
 
-          <p className="hero-role">
+          <p className="role">
             Strategic Sourcing · Supply Chain · Business Development
           </p>
 
-          <p className="hero-description">
-            15+ years of hands-on experience building businesses,
-            developing suppliers, and solving cross-border challenges
-            across the U.S., Korea, and China.
+          <p className="intro">
+            15+ years of cross-border experience across the U.S.,
+            Korea, and China — building businesses, developing suppliers,
+            and turning complex problems into practical solutions.
           </p>
 
-          <div className="hero-actions">
-            <a href="#experience" className="primary-button">
-              View Experience
-            </a>
-
-            <a href="#about" className="text-link">
-              About Brandon →
-            </a>
-          </div>
+          <a className="cta" href="#work">
+            Explore My Work →
+          </a>
         </div>
 
-        <div className="hero-image">
-          <div className="hero-image-frame">
-            <img
-              src="/brandon-baek.jpg"
-              alt="Brandon Baek"
-            />
-          </div>
+        <div className="portrait">
+          <img src="/brandon-baek.jpg" alt="Brandon Baek" />
         </div>
       </section>
     </main>
