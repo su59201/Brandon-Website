@@ -1,32 +1,20 @@
 export default function About() {
-  const markets = [
-    ["01", "U.S.", "Business Development", "Customers", "Operations"],
-    ["02", "KOREA", "Supplier Relationships", "Market Understanding", "Business Culture"],
-    ["03", "CHINA", "Sourcing", "Manufacturing", "Supplier Development"],
-  ];
-
-  const capabilities = [
-    ["◎", "STRATEGIC", "SOURCING", "Supplier identification, qualification, negotiation, cost analysis, and global sourcing strategy."],
-    ["◇", "SUPPLIER", "DEVELOPMENT", "Building long-term supplier relationships, solving operational problems, and creating reliable supply networks."],
-    ["↗", "BUSINESS", "DEVELOPMENT", "Finding opportunities, building relationships from zero, and turning ideas into practical business."],
-  ];
-
-  const principles = [
-    ["01", "HANDS-ON", "I like understanding problems from the ground level, not only from reports."],
-    ["02", "PERSISTENT", "Some of my best business results came from opportunities I pursued for years, not weeks."],
-    ["03", "CROSS-CULTURAL", "I’m comfortable working between different languages, expectations, and ways of doing business."],
-    ["04", "ALWAYS LEARNING", "I’m most energized when I’m learning a new industry, solving an unfamiliar problem, or building something better than what existed before."],
+  const stages = [
+    ["SOURCE", "Strategic Sourcing", "Supplier Identification", "Negotiation"],
+    ["BUILD", "Supplier Development", "Networks", "Relationships"],
+    ["OPERATE", "Customers", "Logistics", "Risk · Execution"],
+    ["GROW", "Business Development", "Markets", "Opportunity"],
   ];
 
   return (
-    <main className="about-final">
-      <div className="about-final-container">
-        <header className="about-final-header">
-          <a className="about-final-brand" href="/" aria-label="Brandon Baek home">
+    <main className="about-four">
+      <div className="about-four-container">
+        <header className="about-four-header">
+          <a className="about-four-brand" href="/" aria-label="Brandon Baek home">
             <strong>BRANDON BAEK</strong>
             <span>GLOBAL BUSINESS · SUPPLY CHAIN</span>
           </a>
-          <nav className="about-final-nav" aria-label="Primary navigation">
+          <nav className="about-four-nav" aria-label="Primary navigation">
             <a href="/">Home</a>
             <a className="active" href="/about" aria-current="page">About</a>
             <a href="/work">Work</a>
@@ -34,93 +22,80 @@ export default function About() {
           </nav>
         </header>
 
-        <section className="about-final-section about-final-hero">
-          <div className="about-final-hero-copy">
-            <p className="about-final-label">ABOUT <span>/</span> 01</p>
+        <section className="about-screen about-screen-one">
+          <div>
+            <p className="about-four-label">ABOUT <span>/</span> 01</p>
             <h1>I build across borders,<br />industries, and cultures.</h1>
-            <p className="about-final-intro">My career has been shaped by one consistent theme: building something from the ground up and solving problems where business, supply chain, and people come together.</p>
-            <div className="about-final-body-copy">
-              <p>Over the past 15+ years, I’ve worked across the U.S., Korea, and China in global sourcing, supplier development, business development, and entrepreneurship.</p>
-              <p>I’ve built businesses, developed supplier networks, negotiated across cultures, managed complex supply chains, and worked through the kind of problems that rarely have a simple answer.</p>
-              <p>Being fluent in English, Korean, and Mandarin has helped me do more than communicate. It has allowed me to understand how people on different sides of a business think, make decisions, and build trust.</p>
-            </div>
-            <p className="about-final-role-line">BUILDER · OPERATOR · CONNECTOR</p>
+            <p className="about-four-intro">My career has been shaped by one consistent theme:<br />building something from the ground up and solving<br />problems where business, supply chain, and people<br />come together.</p>
+            <p className="about-four-signature">BUILDER · OPERATOR · CONNECTOR</p>
           </div>
-          <div className="about-final-stats" aria-label="Career statistics">
+          <div className="about-four-stats" aria-label="Professional summary">
             <div><strong>15+</strong><span>YEARS OF EXPERIENCE</span></div>
             <div><strong>3</strong><span>CORE MARKETS</span></div>
             <div><strong>3</strong><span>LANGUAGES</span></div>
           </div>
         </section>
 
-        <section className="about-final-section about-final-global">
-          <div className="about-final-heading">
-            <p className="about-final-label">02 <span>/</span> GLOBAL PERSPECTIVE</p>
-            <h2>THREE MARKETS.<br /><em>ONE PERSPECTIVE.</em></h2>
+        <section className="about-screen about-screen-two">
+          <div className="about-four-heading">
+            <p className="about-four-label">02 <span>/</span> GLOBAL PERSPECTIVE</p>
+            <h2>THREE MARKETS.<br /><em>ONE OPERATING PERSPECTIVE.</em></h2>
           </div>
-          <div className="about-final-markets">
-            {markets.map(([number, country, line1, line2, line3]) => (
-              <article key={country}>
-                <span>{number}</span>
-                <h3>{country}</h3>
-                <div className="about-final-market-lines"><p>{line1}</p><p>{line2}</p><p>{line3}</p></div>
-              </article>
-            ))}
+
+          <div className="market-network" aria-label="Cross-border connection diagram">
+            <div className="network-line network-line-us" aria-hidden="true"></div>
+            <div className="network-line network-line-korea" aria-hidden="true"></div>
+            <div className="network-line network-line-china" aria-hidden="true"></div>
+            <article className="market-node market-us"><span>01 / MARKET</span><h3>U.S.</h3><p>Business Development</p><p>Customers</p><p>Operations</p></article>
+            <article className="market-node market-korea"><span>02 / MARKET</span><h3>KOREA</h3><p>Supplier Relationships</p><p>Market Understanding</p><p>Business Culture</p></article>
+            <article className="market-node market-china"><span>03 / MARKET</span><h3>CHINA</h3><p>Sourcing</p><p>Manufacturing</p><p>Supplier Development</p></article>
+            <div className="network-center"><i></i><strong>CROSS-BORDER<br />EXECUTION</strong></div>
           </div>
+
           <blockquote>I don’t just work across these markets.<br /><strong>I understand how to connect them.</strong></blockquote>
         </section>
 
-        <section className="about-final-section">
-          <div className="about-final-heading">
-            <p className="about-final-label">03 <span>/</span> CORE CAPABILITIES</p>
-            <h2>WHAT I BRING.</h2>
+        <section className="about-screen about-screen-three">
+          <div className="about-four-heading">
+            <p className="about-four-label">03 <span>/</span> HOW I CREATE VALUE</p>
+            <h2>FROM SOURCE<br /><em>TO GROWTH.</em></h2>
           </div>
-          <div className="about-final-capabilities">
-            {capabilities.map(([icon, title1, title2, text]) => (
-              <article key={title1}>
-                <span className="about-final-icon" aria-hidden="true">{icon}</span>
-                <h3>{title1}<br />{title2}</h3>
-                <p>{text}</p>
+
+          <div className="operating-flow">
+            {stages.map(([name, line1, line2, line3], index) => (
+              <article key={name}>
+                <div className="flow-node"><i></i><span>0{index + 1}</span></div>
+                <h3>{name}</h3><p>{line1}</p><p>{line2}</p><p>{line3}</p>
               </article>
             ))}
           </div>
+
+          <div className="entrepreneur-moment">
+            <h3>I DIDN’T LEARN BUSINESS<br />FROM ONE FUNCTION.</h3>
+            <p>I learned it by building one.</p>
+            <div className="operating-range">CUSTOMERS · SUPPLIERS · CASH FLOW · LOGISTICS · OPERATIONS · NEGOTIATION · RISK · GROWTH</div>
+          </div>
+
+          <div className="growth-standard">SUSTAINABLE GROWTH REQUIRES<br />STRONG SYSTEMS,<br />DISCIPLINED EXECUTION,<br />AND GREAT TEAMS.</div>
+
+          <div className="operating-principles"><span>HANDS-ON</span><span>PERSISTENT</span><span>CROSS-CULTURAL</span><span>ALWAYS LEARNING</span></div>
         </section>
 
-        <section className="about-final-section about-final-experience">
-          <div>
-            <p className="about-final-label">04 <span>/</span> BUILT THROUGH EXPERIENCE</p>
-            <h2>I LEARNED BUSINESS<br /><em>BY BUILDING ONE.</em></h2>
+        <section className="about-screen about-screen-four">
+          <div className="about-next-copy">
+            <p className="about-four-label">04 <span>/</span> THE NEXT CHAPTER</p>
+            <h2>15+ years taught me how to build.</h2>
+            <h3>The next chapter is about<br />what I can build with the right team.</h3>
+            <div className="about-four-actions">
+              <a href="/work"><span>EXPLORE MY EXPERIENCE</span><strong>→</strong></a>
+              <a href="/contact"><span>CONTACT ME</span><strong>→</strong></a>
+            </div>
           </div>
-          <div className="about-final-story">
-            <p>My experience as an entrepreneur gave me a different perspective on business.</p>
-            <p>I wasn’t responsible for only one function. I had to think about customers, suppliers, cash flow, logistics, operations, negotiations, risk, and growth at the same time.</p>
-            <p>Building and operating a business taught me to take ownership, make decisions with incomplete information, and stay close to the actual problem.</p>
-            <div className="about-final-quote">SUSTAINABLE GROWTH REQUIRES<br />STRONG SYSTEMS,<br />DISCIPLINED EXECUTION,<br />AND GREAT TEAMS.</div>
-          </div>
-        </section>
-
-        <section className="about-final-section">
-          <div className="about-final-heading">
-            <p className="about-final-label">05 <span>/</span> PRINCIPLES</p>
-            <h2>HOW I WORK.</h2>
-          </div>
-          <div className="about-final-principles">
-            {principles.map(([number, title, text]) => (
-              <article key={title}>
-                <span>{number}</span>
-                <h3>{title}</h3>
-                <p>“{text}”</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="about-final-cta">
-          <p className="about-final-label">THE NEXT CHAPTER</p>
-          <h2>I’m interested in building the next chapter<br />with companies solving difficult,<br />meaningful problems on a global scale.</h2>
-          <div className="about-final-links">
-            <a href="/work"><span>01 / EXPERIENCE</span><strong>EXPLORE MY EXPERIENCE →</strong></a>
-            <a href="/contact"><span>02 / CONNECT</span><strong>CONTACT ME →</strong></a>
+          <div className="about-number-summary">
+            <div><strong>15+</strong><span>YEARS</span></div>
+            <div><strong>03</strong><span>MARKETS</span></div>
+            <div><strong>03</strong><span>LANGUAGES</span></div>
+            <div><strong>01</strong><span>PERSPECTIVE</span></div>
           </div>
         </section>
       </div>
