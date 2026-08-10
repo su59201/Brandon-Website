@@ -1,0 +1,72 @@
+import styles from "./case.module.css";
+
+const dependencies=["TECHNOLOGY","PROCESSING EQUIPMENT","CHINESE EQUIPMENT SUPPLIERS","KOREAN PROJECT STAKEHOLDERS","COMMERCIAL STRUCTURE","EPC DISCUSSIONS","PROJECT FINANCING","BANKS / INVESTORS","SBLC-RELATED STRUCTURING","CONTRACTUAL DOCUMENTS","PROCUREMENT","LOGISTICS","INTERNATIONAL COORDINATION"];
+const perspectives=[
+ ["EQUIPMENT SUPPLIER","Can the equipment be sold and delivered under workable commercial terms?"],
+ ["PROJECT COMPANY","Can the project be built and financed?"],
+ ["BANK / INVESTOR","Is the structure credible enough to fund?"],
+ ["EPC / TECHNICAL PARTY","Can responsibilities, performance, and execution be structured?"],
+ ["KOREAN STAKEHOLDERS","Does the project make commercial and strategic sense?"],
+ ["INTERNATIONAL PARTIES","Are contracts, payment mechanisms, risk, and responsibilities clear?"],
+];
+const unlock=["IDENTIFY THE REAL BLOCKER","UNDERSTAND EACH PARTY’S INCENTIVE","FIND THE PARTY OR VARIABLE THAT CAN CHANGE THE STRUCTURE","CREATE A VALUE EXCHANGE","RECONNECT THE PARTIES AROUND A WORKABLE PATH"];
+const capabilities=[
+ ["STRATEGIC STRUCTURING","Helped frame project options and identify structural blockers."],
+ ["CROSS-BORDER SOURCING","Supported Chinese equipment sourcing and vendor negotiations."],
+ ["PROJECT FINANCE SUPPORT","Worked on financing strategy, materials, and coordination around banks / investors."],
+ ["COMMERCIAL NEGOTIATION","Supported negotiations across parties with different objectives."],
+ ["CONTRACTUAL COORDINATION","Worked around MOUs, MOAs, EPC-related discussions, and SBLC-related coordination."],
+ ["PROCUREMENT & LOGISTICS","Connected equipment decisions with commercial and logistics considerations."],
+ ["STAKEHOLDER ALIGNMENT","Worked across Korean stakeholders, Chinese suppliers, financial parties, and international participants."],
+ ["TRILINGUAL EXECUTION","Used Korean, Mandarin, and English directly across the project."],
+];
+const lessons=[
+ ["01","FIND THE REAL DECISION-MAKER.","The person in the conversation is not always the person who can unlock the decision."],
+ ["02","UNDERSTAND THE OTHER SIDE’S CONSTRAINT.","A position makes more sense when you understand the risk behind it."],
+ ["03","DON’T CONFUSE ACTIVITY WITH PROGRESS.","More meetings and more communication do not necessarily move a project."],
+ ["04","LOOK FOR VALUE EXCHANGE.","A stalled negotiation often changes when both sides can see what they gain from a different structure."],
+ ["05","TECHNOLOGY, COMMERCIAL TERMS, AND FINANCING CANNOT BE SEPARATED.","In a capital-intensive project, each changes the feasibility of the others."],
+ ["06","INFLUENCE DOES NOT REQUIRE FORMAL AUTHORITY.","Clear thinking, credibility, relationships, and alignment can move parties that do not report to you."],
+ ["07","WHEN THE STRUCTURE DOESN’T WORK, RESTRUCTURE THE PROBLEM.","This became the strongest lesson of the project."],
+];
+
+function Label({children}){return <p className={styles.label}>{children}</p>}
+function Copy({children}){return <div className={styles.copy}>{children}</div>}
+
+export const metadata={title:"HYLA Confidential Energy Recovery Project — Brandon Baek",description:"A strategic advisory case study in cross-border sourcing, project finance, negotiation, and stakeholder alignment."};
+
+export default function HylaCase(){return <main className={styles.page}>
+ <header className={styles.header}><a className={styles.brand} href="/"><strong>BRANDON BAEK</strong><span>GLOBAL BUSINESS · SUPPLY CHAIN</span></a><nav className={styles.nav}><a href="/">Home</a><a href="/about">About</a><a className={styles.active} href="/work">Work</a><a href="/contact">Contact</a></nav></header>
+ <div className={styles.shell}>
+  <section className={styles.hero}>
+   <Label>CASE 02 / STRATEGY · PROJECT FINANCE · CROSS-BORDER</Label>
+   <h1>WHEN THE PROJECT<br/>STOPPED MOVING,<br/><em>I LOOKED FOR<br/>WHAT COULD UNLOCK IT.</em></h1>
+   <div className={styles.heroIdentity}><div><strong>HYLA CO., LTD.</strong><span>CONFIDENTIAL ENERGY RECOVERY PROJECT</span></div><div><strong>SOUTH KOREA · SEP 2025–MAR 2026</strong><span>STRATEGIC ADVISOR<br/>BUSINESS DEVELOPMENT &amp; PROJECT FINANCE</span></div></div>
+   <Copy><p>I joined an early-stage industrial energy-recovery project where technology, equipment sourcing, financing, contractual structure, and stakeholder interests all had to move together.</p><p>My role was not to run the project through formal authority.</p><p>It was to help identify what was blocking progress, connect the right parties, structure workable options, and move complex discussions toward alignment across Korea, China, and international stakeholders.</p></Copy>
+   <div className={styles.proof}><div><strong>~$37M</strong><span>PROJECT FRAMEWORK</span></div><div><strong>KOREA → CHINA</strong><span>CROSS-BORDER COORDINATION</span></div><div><strong>KR · 中文 · EN</strong><span>WORKING ACROSS PARTIES</span></div><div><strong>STRATEGY + SOURCING + FINANCE</strong><span>CROSS-FUNCTIONAL ROLE</span></div></div>
+   <div className={styles.spine}><span>COMPLEXITY</span><i/><span>STRUCTURE</span><i/><span>CLARITY</span></div>
+  </section>
+
+  <section className={`${styles.section} ${styles.thesis}`}><Label>THE CENTRAL IDEA</Label><h2>A COMPLEX PROJECT<br/>DOES NOT ALWAYS MOVE<br/><em>BECAUSE YOU PUSH HARDER.</em></h2><blockquote>SOMETIMES YOU HAVE TO FIND<br/>THE VARIABLE THAT UNLOCKS<br/><strong>THE STRUCTURE.</strong></blockquote></section>
+
+  <section className={`${styles.section} ${styles.project}`}><Label>01 / THE PROJECT</Label><h2>ONE PROJECT.<br/><em>MANY DEPENDENCIES.</em></h2><Copy><p>The project involved an industrial energy-recovery concept in South Korea using continuous processing / pyrolysis-oil recovery technology.</p><p>The opportunity required much more than purchasing equipment. For the project to move forward, multiple elements had to align.</p></Copy><div className={styles.systemMap}><div className={styles.core}>PROJECT<br/>FRAMEWORK<small>~$37M</small></div>{dependencies.map((item,i)=><div className={styles.node} key={item}><b>{String(i+1).padStart(2,"0")}</b><span>{item}</span></div>)}</div><div className={styles.causality}><p>TECHNOLOGY <b>→</b> FINANCING</p><p>FINANCING <b>→</b> CONTRACTS</p><p>CONTRACTS <b>→</b> EQUIPMENT COMMITMENTS</p><p>EQUIPMENT <b>→</b> PROJECT ECONOMICS</p><p>STAKEHOLDER INTERESTS <b>→</b> EVERYTHING</p></div><blockquote>NO SINGLE WORKSTREAM<br/><strong>COULD SUCCEED COMPLETELY BY ITSELF.</strong></blockquote></section>
+
+  <section className={`${styles.section} ${styles.position}`}><Label>02 / MY POSITION</Label><h2>I WASN’T THE OWNER.<br/>I WASN’T THE BANK.<br/>I WASN’T THE EQUIPMENT MANUFACTURER.<br/><em>BUT I WAS OFTEN BETWEEN ALL OF THEM.</em></h2><Copy><p>As Strategic Advisor, I worked across Korean project stakeholders, Chinese processing-equipment suppliers, banks and investors, project-finance discussions, commercial negotiations, procurement and logistics considerations, and international parties.</p><p>My value came from being able to move between different perspectives in Korean, Mandarin Chinese, and English.</p><p>It was not only language translation. It was business translation, technical-commercial translation, cultural translation, and stakeholder translation.</p></Copy><div className={styles.languageRail}><span>KOREAN</span><b>↔</b><span>MANDARIN</span><b>↔</b><span>ENGLISH</span></div><blockquote>THE JOB WAS NOT TO SPEAK THREE LANGUAGES.<br/><strong>THE JOB WAS TO MAKE THREE SIDES<br/>UNDERSTAND THE SAME PROJECT.</strong></blockquote></section>
+
+  <section className={`${styles.section} ${styles.equipment}`}><Label>03 / THE EQUIPMENT · CHINA WORKSTREAM</Label><h2>THE EQUIPMENT WAS NOT<br/><em>JUST A PROCUREMENT DECISION.</em></h2><Copy><p>I supported cross-border sourcing of Chinese processing equipment through supplier communication, vendor negotiations, commercial discussions, equipment-related coordination, procurement considerations, logistics considerations, and connecting Chinese suppliers with Korean project requirements.</p><p>Equipment sourcing existed inside a much larger project-finance structure. The cheapest machine was not automatically the correct answer.</p></Copy><div className={styles.decisionWeb}>{["CAPEX","PROJECT ECONOMICS","FINANCING","IMPLEMENTATION","TECHNICAL CONFIDENCE","CONTRACTUAL STRUCTURE","DELIVERY / LOGISTICS"].map(x=><span key={x}>{x}</span>)}</div><blockquote>IN A CAPITAL PROJECT,<br/><strong>PROCUREMENT IS PART OF THE BUSINESS MODEL.</strong></blockquote></section>
+
+  <section className={`${styles.section} ${styles.finance}`}><Label>04 / FINANCING</Label><h2>A GOOD PROJECT<br/>STILL HAS TO BECOME<br/><em>A FINANCEABLE PROJECT.</em></h2><div className={styles.framework}><strong>~$37M</strong><span>APPROXIMATE PROJECT FRAMEWORK<br/>BEING DEVELOPED</span></div><Copy><p>I supported the development of financing strategy and financing materials around the approximately $37M project framework.</p><p>The work included participation and coordination around project-financing discussions, banks and investors, EPC-related discussions, SBLC-related coordination, commercial documentation, MOUs and MOAs, project structure, and multi-party communication.</p><p>The work was about helping develop an early-stage structure that different financial and project stakeholders could evaluate and discuss. It was not a claim that the full financing closed or that the plant was completed during my involvement.</p></Copy><blockquote>TECHNICAL FEASIBILITY<br/><strong>DOES NOT AUTOMATICALLY CREATE<br/>FINANCIAL FEASIBILITY.</strong></blockquote></section>
+
+  <section className={`${styles.section} ${styles.perspectives}`}><Label>05 / THE REAL PROBLEM</Label><h2>EVERY PARTY<br/><em>SAW A DIFFERENT PROJECT.</em></h2><div className={styles.perspectiveGrid}>{perspectives.map(([who,q],i)=><article key={who}><span>{String(i+1).padStart(2,"0")}</span><h3>{who}</h3><p>{q}</p></article>)}</div><div className={styles.oneProject}><span>THE PROJECT WAS ONE PROJECT.</span><strong>BUT EVERY STAKEHOLDER<br/>WAS MAKING A DIFFERENT DECISION.</strong></div><Copy><p>When discussions stalled, simply repeating the same request was often ineffective. I had to understand who actually had authority, who carried the risk, and what each party needed before it could move.</p><p>I looked for what one party had that another party needed, which requirement was real, which was negotiable, and where the actual bottleneck sat.</p></Copy></section>
+
+  <section className={`${styles.section} ${styles.unlock}`}><Label>06 / THE UNLOCK</Label><h2>DON’T PUSH THE DEADLOCK.<br/><em>CHANGE THE STRUCTURE.</em></h2><div className={styles.notThis}><span>CALL MORE</span><span>EMAIL MORE</span><span>PRESSURE HARDER</span><span>REPEAT THE SAME PROPOSAL</span></div><div className={styles.unlockSteps}>{unlock.map((x,i)=><article key={x}><b>STEP {String(i+1).padStart(2,"0")}</b><strong>{x}</strong></article>)}</div><Copy><p>When a negotiation or project workstream became stuck, my approach was not simply to increase activity around the same proposal.</p><p>The lesson was to identify the real blocker, understand each party’s incentive, find the party or variable that could change the structure, create a value exchange, and reconnect the parties around a workable path.</p><p>Sometimes progress comes from restructuring the problem rather than pushing the existing structure harder.</p></Copy><blockquote>THE BEST NEGOTIATION IS NOT ALWAYS ABOUT<br/>GETTING SOMEONE TO SAY YES.<br/><strong>SOMETIMES IT IS ABOUT CHANGING THE CONDITIONS<br/>THAT MADE THEM SAY NO.</strong></blockquote></section>
+
+  <section className={`${styles.section} ${styles.influence}`}><Label>07 / INFLUENCE WITHOUT AUTHORITY</Label><h2>I COULDN’T ORDER<br/>ANYONE TO MOVE.<br/><em>SO I HAD TO CREATE<br/>A REASON TO MOVE.</em></h2><Copy><p>At B.R. International, I was the founder and CEO. Here, I was an advisor.</p><p>I did not control the bank, the investors, the Korean stakeholders, the Chinese suppliers, the EPC parties, or the technical parties.</p><p>Execution therefore depended on credibility, clarity, relationships, negotiation, perspective-taking, information flow, value exchange, timing, and alignment.</p></Copy><div className={styles.contrast}><div><span>AUTHORITY</span><strong>CAN FORCE ACTION.</strong></div><b>≠</b><div><span>ALIGNMENT</span><strong>CREATES COMMITMENT.</strong></div></div></section>
+
+  <section className={`${styles.section} ${styles.role}`}><Label>08 / WHAT I ACTUALLY DID</Label><h2>MY ROLE SAT<br/><em>BETWEEN FUNCTIONS.</em></h2><div className={styles.capabilityMap}>{capabilities.map(([title,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></section>
+
+  <section className={`${styles.section} ${styles.lessons}`}><Label>09 / WHAT THIS PROJECT TAUGHT ME</Label><h2>COMPLEX PROJECTS<br/><em>ARE NOT LINEAR.</em></h2><div className={styles.lessonList}>{lessons.map(([n,title,text])=><article key={n}><span>{n}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></section>
+
+  <section className={`${styles.section} ${styles.final}`}><Label>CASE 02 / FINAL REFLECTION</Label><h2>I USED TO THINK<br/>SOLVING A PROBLEM<br/>MEANT FINDING THE ANSWER.<br/><em>NOW I LOOK FIRST<br/>FOR WHAT IS PREVENTING<br/>THE ANSWER FROM WORKING.</em></h2><div className={styles.variables}>{["PEOPLE","INCENTIVES","CAPITAL","TECHNOLOGY","RISK","TIMING","STRUCTURE"].map(x=><span key={x}>{x}</span>)}</div><Copy><p>The HYLA project gave me a different kind of operating experience from building my own company.</p><p>I was working inside a complex industrial project where no single person controlled every variable.</p><p>Progress depended on understanding how technical decisions, commercial interests, financing requirements, contracts, suppliers, and stakeholder incentives affected one another.</p><p>The experience strengthened the way I approach complex problems today: understand the structure first, find the real constraint, understand what each party needs, and look for the variable that can unlock the next move.</p></Copy><nav className={styles.caseNav}><a href="/work/br-international"><small>← CASE 01</small><strong>B.R. INTERNATIONAL</strong></a><a href="/work"><small>INDEX</small><strong>BACK TO WORK</strong></a><span><small>CASE 03 →</small><strong>WEIHAI PORT / PYEONGTAEK KOREA PROJECT</strong></span></nav></section>
+ </div>
+</main>}
