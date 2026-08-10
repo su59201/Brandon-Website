@@ -40,3 +40,6 @@
 
 @media(max-width:900px){.heroMain{grid-template-columns:1fr}.heroMain .lede{grid-column:1;grid-row:auto;max-width:680px}.hero .masterTimeline{grid-template-columns:repeat(3,1fr);row-gap:14px}.hero .masterTimeline>div:nth-child(3) b{display:none}}
 @media(max-width:640px){.hero{min-height:auto;gap:34px;padding:62px 0 42px}.heroMain h1{font-size:clamp(49px,14vw,61px);margin-top:20px}.hero .company{font-size:10px!important;line-height:1.5!important}.hero .lede{margin-top:24px!important;font-size:16px!important;line-height:1.65!important}.hero .stats{grid-template-columns:1fr 1fr}.hero .stats>div{min-height:94px;padding:17px 12px}.hero .stats>div:first-child{padding-left:12px}.hero .stats strong{font-size:30px}.hero .stats span{font-size:9px;line-height:1.4}.hero .masterTimeline{display:grid;grid-template-columns:1fr 1fr;row-gap:12px}.hero .masterTimeline>div{min-height:34px}.hero .masterTimeline>div:nth-child(2n) b{display:none}.hero .masterTimeline>div:nth-child(3) b{display:inline}.hero .masterTimeline span{white-space:normal;line-height:1.35}}
+
+.heroMain .lede{grid-column:1/-1;grid-row:auto;max-width:780px;margin:26px 0 0!important;color:#c2cad4!important;font-size:19px;line-height:1.68!important}
+@media(max-width:640px){.heroMain .lede{margin-top:24px!important;font-size:16px!important;line-height:1.65!important}}
