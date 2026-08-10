@@ -36,7 +36,23 @@ export const metadata={title:"B.R. International USA LLC — Brandon Baek",descr
 export default function Case(){return <main className={styles.casePage}>
  <header className={styles.header}><a className={styles.brand} href="/"><strong>BRANDON BAEK</strong><span>GLOBAL BUSINESS · SUPPLY CHAIN</span></a><nav className={styles.nav}><a href="/">Home</a><a href="/about">About</a><a className={styles.active} href="/work">Work</a><a href="/contact">Contact</a></nav></header>
  <div className={styles.journey}>
-  <section className={`${styles.section} ${styles.hero}`}><div className={styles.heroMain}><Label>CASE 01 / B.R. INTERNATIONAL</Label><p className={styles.company}>B.R. INTERNATIONAL USA LLC <span>2018—2025</span></p><h1>FROM ZERO<br/><em>TO A REAL BUSINESS.</em></h1></div><aside className={styles.heroMeta}><p>FOUNDER / CEO</p><p>CROSS-BORDER PLASTICS</p><p>TRADING → PROCESSING / MANUFACTURING</p><p>U.S. → ASIA</p></aside><div className={styles.stats}><div><strong>2018—2025</strong><span>SEVEN-YEAR JOURNEY</span></div><div><strong>~30–40</strong><span>U.S. SUPPLIERS</span></div><div><strong>~15</strong><span>EMPLOYEES AT PEAK</span></div><div><strong>~$3M</strong><span>NORMAL PEAK-YEAR REVENUE</span></div></div></section>
+  <section className={`${styles.section} ${styles.hero}`}>
+   <div className={styles.heroMain}>
+    <Label>CASE 01 / ENTREPRENEURSHIP · SUPPLY CHAIN · OPERATIONS</Label>
+    <h1>FROM ZERO<br/><em>TO A REAL BUSINESS.</em></h1>
+    <p className={styles.company}>B.R. INTERNATIONAL USA LLC · 2018–2025</p>
+    <p className={styles.lede}>I built B.R. International from a small cross-border trading operation into a multi-million-dollar plastics business spanning sourcing, supplier development, logistics, processing, and manufacturing across the U.S. and Asia.</p>
+   </div>
+   <div className={styles.stats} aria-label="Company scale">
+    <div><strong>7 YEARS</strong><span>Built &amp; operated</span></div>
+    <div><strong>30–40</strong><span>U.S. suppliers</span></div>
+    <div><strong>~15</strong><span>Employees at peak</span></div>
+    <div><strong>~$3M</strong><span>Normal peak-year revenue</span></div>
+   </div>
+   <div className={styles.masterTimeline} aria-label="Seven-year journey preview">
+    {['STARTED FROM ZERO','BUILT SUPPLY','ENTERED MANUFACTURING','SCALED','LEARNED','EXITED'].map((step,index)=><div key={step}><span>{step}</span>{index<5&&<b>→</b>}</div>)}
+   </div>
+  </section>
 
   <section className={`${styles.section} ${styles.beginning}`}><div><Label>01 / THE BEGINNING</Label><h2>I SAW AN OPPORTUNITY.<br/><em>BUT I DIDN’T HAVE MUCH<br/>TO START WITH.</em></h2></div><Narrative id="chapter1"/><blockquote>THE OPPORTUNITY WAS REAL.<br/><strong>THE BUSINESS MODEL HAD TO FIT THE RESOURCES AVAILABLE.</strong></blockquote></section>
 
