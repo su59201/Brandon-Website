@@ -19,7 +19,7 @@ export default function ContactPage() {
     <div className={styles.shell}>
       <section className={styles.hero}>
         <p>CONTACT</p>
-        <h1>LET'S START<br/><em>A CONVERSATION.</em></h1>
+        <h1>LET'S START <em>A CONVERSATION.</em></h1>
         <span>I'm always open to conversations around global sourcing, supply chain, cross-border business, and new opportunities.</span>
       </section>
 
