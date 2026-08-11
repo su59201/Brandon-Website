@@ -40,8 +40,8 @@ export default function ContactForm() {
     <div className={styles.honeypot} aria-hidden="true"><label htmlFor="contact-website">Website</label><input id="contact-website" name="website" value={form.website} onChange={update} tabIndex={-1} autoComplete="off"/></div>
     <button type="submit" disabled={status === "sending"}>{status === "sending" ? "SENDING..." : "SEND MESSAGE →"}</button>
     <div className={styles.feedback} aria-live="polite">
-      {status === "success" && <p className={styles.success}><strong>MESSAGE SENT.</strong><span>THANK YOU.<br/>I'LL GET BACK TO YOU SOON.</span></p>}
-      {status === "error" && <p className={styles.error}><strong>MESSAGE NOT SENT.</strong><span>PLEASE TRY AGAIN OR EMAIL ME DIRECTLY AT<br/><a href="mailto:su59201@gmail.com">su59201@gmail.com</a></span></p>}
+      {status === "success" && <p className={styles.success}><strong>MESSAGE SENT.</strong><span>Thanks for reaching out.<br/>I'll get back to you soon.</span></p>}
+      {status === "error" && <p className={styles.error}><strong>MESSAGE NOT SENT.</strong><span>Please try again or email me directly at<br/><a href="mailto:su59201@gmail.com">su59201@gmail.com</a></span></p>}
     </div>
   </form>;
 }
