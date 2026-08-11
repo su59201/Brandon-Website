@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContactForm from "./ContactForm";
 import styles from "./contact.module.css";
 
@@ -24,7 +25,7 @@ export default function ContactPage() {
 
       <section className={styles.contact}>
         <div className={styles.profile}>
-          <div className={styles.portrait} role="img" aria-label="Professional portrait of Brandon Baek"/>
+          <div className={styles.portrait}><Image src="/brandon-contact.jpg" alt="Brandon Baek in a navy suit and light blue shirt" fill sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 900px) 300px, 390px" priority/></div>
           <div className={styles.identity}><strong>BRANDON BAEK</strong><span>GLOBAL BUSINESS · SUPPLY CHAIN</span></div>
           <dl>
             <div><dt>LOCATION</dt><dd>Dallas–Fort Worth, Texas</dd></div>
@@ -35,6 +36,7 @@ export default function ContactPage() {
 
         <div className={styles.formSide}>
           <p className={styles.sectionLabel}>SEND A MESSAGE</p>
+          <p className={styles.formIntro}>Have a question, opportunity, or idea to discuss? Send me a note.</p>
           <ContactForm/>
         </div>
       </section>
